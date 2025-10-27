@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    
+    background-image: url('kot_tapeta.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    background-color: #f0f8ff;
+}
+
+header, footer {
+    background: linear-gradient(90deg, rgba(30, 144, 255, 0.95) 0%, rgba(0, 112, 192, 0.8) 100%); 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+header p, footer p {
+    margin: 0;
+}
+
+h1 {
+    color: #000080;
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to right, #e0f0ff 0%, #aed6f1 50%, #e0f0ff 100%);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 128, 0.3);
+}
+
+h2 {
+    border-bottom: 5px double #1e90ff;
+    padding-bottom: 10px;
+    color: #1e90ff;
+    margin-top: 40px;
+    text-transform: capitalize;
+}
+
+h3 {
+    color: #4682b4;
+    margin-top: 25px;
+    font-style: italic;
+}
+
+.lista-glowa {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+.image-section, .image-footer {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border: 3px solid #1e90ff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    width: 150px; 
+    height: 150px;
+}
+
+.image-footer {
+    margin: 10px auto 0;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 20px;
+        /* Utrzymano tło main z przezroczystością, aby obraz body był widoczny */
+        background: rgba(255, 255, 255, 0.9); 
+        margin: 20px auto;
+        border-radius: 15px;
+        max-width: 1200px;
+    }
+    
+    section {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(to top right, #ffffff, #f0f0ff);
+    }
+    
+    h1 { grid-column: 1 / -1; }
+    footer { grid-column: 1 / -1; }
+}
+
+@media (max-width: 767px) {
+    main {
+         background: #ffffff;
+         padding: 10px;
+    }
+    section {
+        border-bottom: 1px solid #eee;
+    }
+    
+    .image-section, .image-footer {
+        width: 100px;
+        height: 100px;
+        margin: 10px auto;
+    }
+}
