@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(185, 69, 239);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#taskList{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: rgba(23, 221, 232, 0.852);
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.485);
+    min-width: 320px;
+    max-width: 90vw;
+}
+
+.highlight{
+    background-color: yellow;
+    font-weight: bold;
+    padding: 1px 0;
+    border-radius: 2px;
+}
