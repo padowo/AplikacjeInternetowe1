@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle z mapy</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        
+        <div class="lewy_gorny"> 
+            <div id="mapa"></div>
+            <div class="kontener-przyciskow">
+                <button id="moja_lokalizacja">Moja lokalizacja</button>
+                <button id="pobierz_mape">Pobierz mapę</button>
+            </div>
+        </div>
+
+        <div class="prawy_gorny"> 
+            <div id="podglad-mapy" class="placeholder">
+                <p>Podgląd mapy po pobraniu</p>
+            </div>
+        </div>
+        
+        <div class="lewy_dolny"> 
+        </div>
+
+        <div class="prawy_dolny">
+            <div class="mapa_grid">
+                <div class="miejsce_puzzla" data-index="0"></div>
+                <div class="miejsce_puzzla" data-index="1"></div>
+                <div class="miejsce_puzzla" data-index="2"></div>
+                <div class="miejsce_puzzla" data-index="3"></div>
+                <div class="miejsce_puzzla" data-index="4"></div>
+                <div class="miejsce_puzzla" data-index="5"></div>
+                <div class="miejsce_puzzla" data-index="6"></div>
+                <div class="miejsce_puzzla" data-index="7"></div>
+                <div class="miejsce_puzzla" data-index="8"></div>
+                <div class="miejsce_puzzla" data-index="9"></div>
+                <div class="miejsce_puzzla" data-index="10"></div>
+                <div class="miejsce_puzzla" data-index="11"></div>
+                <div class="miejsce_puzzla" data-index="12"></div>
+                <div class="miejsce_puzzla" data-index="13"></div>
+                <div class="miejsce_puzzla" data-index="14"></div>
+                <div class="miejsce_puzzla" data-index="15"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
